@@ -1512,7 +1512,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 # PROGRAM_BINARY_AGE += 1		anything done adds 1
 #
 
-. version.mk
+. ./version.mk
 
 REJOY_MAJOR_VERSION=$MAJOR
 REJOY_MINOR_VERSION=$MINOR
