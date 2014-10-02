@@ -1,0 +1,51 @@
+README
+
+Installation
+
+$ ./configure && make
+
+and as root
+
+# make install
+
+That's all! Run 'rejoystick' and your good to go. 
+
+
+Instruction
+
+$ rejoystick
+
+Click the button you want to assign (e.g. Button 0) and then click "Change key". Then click a keyboard key.
+
+After you have done that will all the buttons you want to bind (or whatever you want to call it) click "OK". That
+will save your layout to $HOME/.rejoystickrc which is in plain text. In the future I will make it possible to
+run rejoystick without the gui and just edit the rc file but that's in the future.
+
+When you have clicked "OK" the program quits. Now, to run the "real" rejoystick app, simply run
+$ rejoystick -d
+
+This will run in the background, wait for joystick events and then translate. No gui. 
+Have to be killed and with something like "killall -9 rejoystick"
+
+
+
+
+Thanks
+
+A BIG thanks to Nicholas Niro who helped me out several times with rearranging the architecture. The autotools can 
+be hard to understand/master and it's real nice when you get help with that. Thanks!
+
+I also want to thank Nathan for qjoypad and for commenting it a lot. It has helped me a bit with my work with rejoystick.
+
+
+
+Misc
+
+And yeah. This is a ripoff of qjoypad. I started out doing rejoystick because I thought qjoypad was a bit bloated
+(and it didn't want to compile for me) but now rejoystick is getting bloated to. But I will try to making it possible
+to run without the gui (if you _really_ hate gtk) and then only depend upon SDL. 
+Report bugs to samel_tvom@yahoo.se
+
+Have fun!
+
+/ Samuel
